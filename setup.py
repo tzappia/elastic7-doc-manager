@@ -11,7 +11,11 @@ setuptools.setup(
     url="https://github.com/tmpaul06/elastic7-doc-manager",
     install_requires=["mongo-connector>=2.5.0", "importlib_metadata"],
     python_requires=">=3.4",
-    extras_require={"aws": ["boto3>=1.4.0", "requests-aws-sign>=0.1.2"], "elastic7": ["elasticsearch~7"]},
+    extras_require=[
+        "boto3>=1.4.0",
+        "requests-aws-sign>=0.1.2"
+        "elasticsearch~7"
+    ],
     packages=["mongo_connector", "mongo_connector.doc_managers"],
     classifiers=[
         "Development Status :: 4 - Beta",
