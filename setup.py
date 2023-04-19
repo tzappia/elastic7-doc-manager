@@ -13,7 +13,7 @@ setuptools.setup(
     python_requires=">=3.4",
     extras_require={
         "aws": ["boto3 >= 1.4.0", "requests-aws-sign >= 0.1.2"],
-        "elastic7": ["elasticsearch>=7.0.0<8.0.0"]
+        "elastic7": ["elasticsearch ~7"]
     },
     packages=["mongo_connector", "mongo_connector.doc_managers"],
     classifiers=[
